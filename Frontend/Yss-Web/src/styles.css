@@ -1,0 +1,124 @@
+/* You can add global styles to this file, and also import other style files */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+    font-family: 'elephantguncondital'; /* Cambia esto por el nombre que desees usar */
+    src: url('./assets/fonts/elephantguncondital.ttf') format('truetype'); /* Asegúrate de que la ruta sea correcta */
+    font-weight: normal; /* Cambia si es negrita, etc. */
+    font-style: normal; /* Cambia si es cursiva, etc. */
+  }
+
+body {
+    background: url("assets/img/FondoGrafiti.jpg") no-repeat center center fixed;
+    background-size: cover;
+    font-family: 'Courier New', Courier, monospace;
+}
+nav {
+    sticky: top;
+}
+
+nav ul a {
+    color: #FF5100; /* Color original del texto */
+    transition: color 0.5s ease; /* Transición suave */
+}
+
+
+.logo{
+    font-family: 'elephantguncondital';
+    font-size: 80px;
+    /* color: #FFD700;
+    text-shadow: 2px 2px 4px #000000; */
+}
+
+.menu-nav{
+    font-family: 'Courier New', Courier, monospace;
+    /* font-weight: 400; */
+}
+
+.ourwork1{
+    font-family: 'elephantguncondital';
+    color: transparent;
+
+  
+
+}
+
+.text-mask{
+    width: 100%;
+    text-transform: uppercase;
+    font-size: 400px;
+
+    background-image: url("assets/img/FondoGrafiti.jpg");
+    background-size: cover;
+    background-position-y: top;
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: #ffffff00;
+
+}
+
+
+.link-mask{
+    background: url("assets/img/FondoGrafiti.jpg");
+    /* background-size: cover; */
+    background-position: center;
+   
+}
+
+.brandList{
+    font-family: 'Courier New', Courier, monospace;
+    
+}
+
+.brandList li{
+    list-style-type: none;
+    display: inline
+
+}
+
+.AboutBackground {
+    /* animation: fadeIn 4s; */
+    
+    background: url("../public/image/yss.jpg");
+    background-position: center;
+    background-size: 50%;
+    background-repeat: no-repeat;
+    animation: easyOut 4s;
+    
+}
+
+#PriceBox {
+    display: none;   
+}
+
+/* .yssImgSize{
+    animation: easyOut 4s forwards;
+    filter: brightness(1);
+}
+
+
+
+@keyframes easyOut {
+    0% {
+        width: 50%;
+        filter: brightness(1);
+    }
+    100% {
+        width: 20%;
+        filter: brightness(0.7);
+    }
+    
+} */
+
+/* @keyframes fadeIn {
+    0% {
+        opacity: 0;
+    }
+    100% {
+        opacity: 1;
+    }
+    
+} */
