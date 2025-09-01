@@ -8,7 +8,7 @@ const contactRoute = require('./routes/contact');
 const app = express();
 const PORT = process.env.PORT || 10000; // Render asigna PORT automáticamente
 
-app.use(cors({ origin: '*' }));
+app.use(cors());
 app.use(express.json());
 app.use(express.urlencoded({ extended: true }));
 

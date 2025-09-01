@@ -64,3 +64,10 @@ nav {
     background-position: center;
     background-size: cover;
 }
+button{
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
