@@ -1,0 +1,357 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta name="description" content="Yellow Square Creative Studio" />
+
+    <title>Yellow Square</title>
+
+    <link rel="stylesheet" href="./public/css/styles.css" />
+    <link rel="stylesheet" href="./public/css/output.css" />
+  </head>
+  <body>
+    <header class="w-full sticky top-0 z-40">
+      <div class="flex justify-between lg:items-center p-4">
+        <div class="w-1/4 flex items-start">
+          <img src="./public/img/YS Logo.png" alt="Logo" class="logo transition-all duration-300 ease-in-out w-32" />
+        </div>
+        <!-- NAV PARA PANTALLAS GRANDES (visible solo en lg y superiores) -->
+        <div class="w-2/4 max-[700px] hidden lg:flex items-center justify-center">
+          <nav class="flex items-center justify-center w-[700px] h-[70px] px-10 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-md hover:bg-black/20 transition-all duration-300 ease-in-out">
+            <ul class="flex space-x-8 text-black font-medium text-2xl">
+              <li><a href="#home" class="hover:text-white transition">Home</a></li>
+              <li><a href="#services" class="hover:text-white transition">Services</a></li>
+              <li><a href="#portfolio" class="hover:text-white transition">Portfolio</a></li>
+              <li><a href="#contact" class="hover:text-white transition">Contact</a></li>
+            </ul>
+          </nav>
+        </div>
+        <div class="w-1/4"></div>
+        <!-- NAV PARA PANTALLAS MEDIANAS Y PEQUEÑAS (visible solo en md y menores) -->
+        <div class="w-1/3 flex lg:hidden items-end justify-end relative ">
+          <nav class="flex flex-col items-center justify-center w-16 h-56 px-6 py-3 rounded-full bg-white/10 backdrop-blur-md shadow-md  hover:shadow-blue-200 transition-all duration-300 ease-in-out">
+            <ul class="flex flex-col space-y-6 text-black font-medium text-xl">
+              <li class="group relative flex items-center">
+                <a href="#home" class="text-2xl transition-transform duration-300 group-hover:-translate-x-10 z-10">H</a>
+                <span class="absolute left-full pr-2 text-2xl  whitespace-nowrap rounded-full bg-gradient-to-l from-white  backdrop-blur-lg  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-x-10 z-10">
+                  ome
+                </span>
+              </li>
+              <li class="group relative flex items-center">
+                <a href="#services" class="text-2xl transition-transform duration-300 group-hover:-translate-x-24 z-10">S</a>
+                <span class="absolute left-full -ml-12 pr-2 text-2xl  whitespace-nowrap rounded-full bg-gradient-to-l from-white  backdrop-blur-lg  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-x-12 z-10">
+                  ervices
+                </span>
+              </li>
+              <li class="group relative flex items-center">
+                <a href="#portfolio"
+                  class="text-2xl transition-transform duration-300 group-hover:-translate-x-32 z-10">
+                  P
+                </a>
+                <span class="absolute left-full -ml-20 pr-2 text-2xl  whitespace-nowrap rounded-full bg-gradient-to-l from-white  backdrop-blur-lg  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-x-12 z-10">
+                  ortafolio
+                </span>
+              </li>
+              <li class="group relative flex items-center">
+                <a href="#contact" class="text-2xl transition-transform duration-300 group-hover:-translate-x-24 z-10">C</a>
+                <span class="absolute left-full -ml-12 pr-2 text-2xl  whitespace-nowrap rounded-full bg-gradient-to-l from-white  backdrop-blur-lg  opacity-0 group-hover:opacity-100 transition-opacity duration-300 -translate-x-12 z-10">
+                  ontacto
+                </span>
+              </li>
+            </ul>
+          </nav>
+        </div>
+  
+    </header>
+
+
+    <main>
+      <!-- -------------------landing------------------- -->
+        <section class="landing p-10 2xl:w-[1600px] xl:w-7xl lg:w-5xl md:w-3xl sm:w-2xl 2xl:h-[1300px] xl:h-[1100px] lg:h-[1000px] md:h-[960px] sm:h-[860px] flex flex-col justify-start pt-20 items-center mx-auto ">
+            <div class="text-center mb-8">
+                <h1 class="text-4xl">Yellow Square Studio</h1>
+                <h1 class="text-4xl text-[#999999]">We make digital things!</h1>
+            </div>
+            <div class="container-landing w-full h-[80%] mx-auto my-8 p-8 bg-white rounded-4xl shadow-lg flex flex-col justify-center items-center mb-24 sm:mb-12">
+                <h2 class="text-2xl font-semibold mb-36">
+                    Somos un estudio creativo que transforma ideas en marcas potentes.
+                </h2>
+            </div>
+            <div class="text-4xl text-center sm:text-3xl">
+                <h1>Nos hacemos cargo de la imagen de tu negocio.</h1>
+            </div>
+        </section>
+<!-- -------------------services------------------- -->
+        <section class="services p-10 2xl:w-[1600px] xl:w-7xl lg:w-5xl md:w-3xl sm:w-2xl  flex flex-col justify-start items-center mx-auto ">
+            <div class=" flex lg:flex-row flex-col gap-4 text-center mb-8 h-1000px ">
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full mb-8">
+                    <img src="./public/img/Landing.png" alt="" class="lg:w-full w-[400px] lg:h-[630px] object-cover rounded-xl shadow-xl ">
+                    <h1 class=" mt-6" >Diseño gráfico</h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">
+                      Logotipos, folletos, packaging, presentaciones. Diseñamos para que te recuerden.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full mb-8">
+                    <img src="./public/img/web-img.png" alt="" class="lg:w-full w-[400px] lg:h-[630px] object-cover bg-white  rounded-xl shadow-xl">
+                    <h1 class=" mt-6" >Desarrollo Web</h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">
+                      Webs rápidas, responsive y orientadas a resultados. Desde landings hasta tiendas online.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full mb-8">
+                    <img src="./public/img/Dolce&Gabbana.jpg" alt="" class="lg:w-full w-[400px] lg:h-[630px] object-cover rounded-xl shadow-xl">
+                    <h1 class=" mt-6" >Fotografía </h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">Contenido visual profesional que transmite emociones y genera confianza.</p>
+                </div>
+            </div>
+
+            <div class=" flex lg:flex-row flex-col gap-4 text-center mb-8 h-1000px ">
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full  h-auto mb-8">
+                    <video class="lg:w-full w-[400px] lg:h-[630px] object-cover rounded-xl shadow-xl" controls src="./public/vid/yaros-video.MP4"></video>
+                    <h1 class=" mt-6" >Video</h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">
+                      Producción de videos creativos que cuentan historias y conectan con tu audiencia.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full h-auto mb-8">
+                  <video class="lg:w-full w-[400px] lg:h-[630px]  object-cover rounded-xl shadow-xl" controls src="./public/vid/redes-sociales.mov"></video>
+                    <h1 class=" mt-6" >Redes sociales</h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">
+                      Estrategia, contenido, imagen y coherencia para destacar entre el ruido digital.
+                    </p>
+                </div>
+                <div class="flex flex-col justify-center items-center text-3xl font-bold text-center lg:w-1/3 w-full  h-auto mb-8">
+                    <img src="./public/img/vado.jpg" alt="" class="lg:w-full w-[400px] lg:h-[630px] object-cover rounded-xl shadow-xl">
+                    <h1 class=" mt-6" >Branding</h1>
+                    <p class="text-lg font-light text-[#999999] mt-2">
+                      Construimos marcas sólidas desde el naming hasta la voz y los colores que las definen.
+                    </p>
+                </div>
+            </div>
+           </div>
+
+        <!-- ------------------------Testimonials----------------------- -->
+
+            <div class="testimonials mt-14 px-6 py-12 max-w-full mx-auto grid grid-cols-1 lg:grid-cols-3 gap-8 items-start">
+                <!-- Left Side: Title + Arrows -->
+                <div class="col-span-1 ">
+                    
+                    <h2 class="text-5xl font-bold mb-6 leading-tight">Descubre lo que piensan<br>nuestros clientes de nosotros.</h2>
+                    <div class="flex gap-4">
+                        <button id="prevBtn"
+                            class="w-15 h-15 rounded-full border border-black flex items-center justify-center text-3xl hover:bg-black hover:text-white transition">&#8592;</button>
+                        <button id="nextBtn"
+                            class="w-15 h-15 rounded-full bg-black text-white flex items-center justify-center text-3xl hover:bg-gray-800 transition">&#8594;</button>
+                    </div>
+                </div>
+
+                <!-- Right Side: Testimonial Slider -->
+                <div class="col-span-2 overflow-hidden relative">
+                    <div id="testimonialSlider" class="flex flex-row transition-transform duration-500">
+                      <!-- Slide 1 (Testimonios 1 y 2) -->
+                      <div class="flex flex-col lg:flex-row w-full flex-shrink-0">
+                        <!-- Testimonial 1 -->
+                        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                            <div class="bg-white p-6 shadow-sm flex flex-col justify-between h-96 rounded-3xl">
+                                <p class="mb-4 text-sm md:text-base text-ellipsis overflow-hidden">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Delectus quasi
+                                    consequuntur dolores assumenda repudiandae placeat commodi aut exercitationem! Fugit
+                                    laborum minima quae fugiat optio. Beatae adipisci tempore accusantium repudiandae
+                                    praesentium voluptatum, minus expedita alias atque, voluptatibus perferendis, odit
+                                    explicabo eligendi commodi exercitationem enim. Obcaecati necessitatibus iste animi
+                                    non est voluptates?
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://randomuser.me/api/portraits/men/32.jpg" alt="Alex Perez"
+                                        class="w-8 h-8 rounded-full">
+                                    <span class="font-medium text-sm">Alex Perez</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 2 -->
+                        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                            <div class="bg-white p-6 shadow-sm flex flex-col justify-between h-96  rounded-3xl">
+                                <p class="mb-4 text-sm md:text-base text-ellipsis overflow-hidden">
+                                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Ratione ullam non itaque
+                                    doloremque! Earum unde nam, deleniti accusamus, consequatur facere autem repellat
+                                    adipisci quae dolorem voluptas quisquam. Molestias, ut excepturi! Distinctio
+                                    suscipit consectetur delectus ea id, velit quam, soluta inventore molestiae ducimus
+                                    tempora nostrum eveniet ad? Quas exercitationem laborum debitis?
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" alt="Maria Guitart"
+                                        class="w-8 h-8 rounded-full">
+                                    <span class="font-medium text-sm">Maria Guitart</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>
+                      <!-- Slide 2 (Testimonios 3 y 4) -->
+                      <div class="flex flex-col lg:flex-row w-full flex-shrink-0">
+                        <!-- Testimonial 3 -->
+                        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                            <div class="bg-white p-6 shadow-sm flex flex-col justify-between h-96 rounded-3xl">
+                                <p class="mb-4 text-sm md:text-base text-ellipsis overflow-hidden">
+                                    Lorem ipsum dolor sit, amet consectetur adipisicing elit. Expedita fugiat sed fugit
+                                    maxime fuga repellendus, sunt asperiores in! Dolorem quos voluptatem distinctio
+                                    ipsum provident magni nihil hic odio. Impedit laudantium voluptatum temporibus quod
+                                    odio fuga cumque ad explicabo id dolorum!
+                                </p>
+                                <div class="flex items-center gap-3">
+                                    <img src="https://randomuser.me/api/portraits/women/32.jpg" class="w-8 h-8 rounded-full" />
+                                    <span class="font-medium text-sm">Maria Guitart</span>
+                                </div>
+                            </div>
+                        </div>
+
+                        <!-- Testimonial 4 -->
+                        <div class="w-full lg:w-1/2 px-4 mb-6 lg:mb-0">
+                            <div class="bg-white h-96 p-6 shadow-sm flex flex-col justify-between rounded-3xl">
+                                <p class="mb-4 text-sm md:text-base text-ellipsis overflow-hidden">
+                                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Fugit quasi fugiat velit
+                                    consequuntur laborum, iste ut ipsa earum neque doloremque animi, cupiditate
+                                    exercitationem. Blanditiis tempore cupiditate doloremque maiores incidunt vero modi
+                                    eos ut iure fuga! Excepturi laudantium suscipit libero possimus! Placeat error est
+                                    veritatis sequi voluptatum consequuntur molestias labore adipisci?
+                                </p>
+                                <div class="flex items-center gap-3 ">
+                                    <img src="https://randomuser.me/api/portraits/women/33.jpg" class="w-8 h-8 rounded-full" />
+                                    <span class="font-medium text-sm">Maria Guitart</span>
+                                </div>
+                            </div>
+                        </div>
+                      </div>  
+
+                        <!-- Agrega más testimonios aquí -->
+                    </div>
+                </div>
+            </div>
+
+
+            <div class="flex lg:flex-row flex-col-reverse text-[#4d4d4d] text-center  mx-auto rounded-t-none rounded-b-2xl shadow-2xl p-8 bg-white">
+                    <div class="lg:w-1/3 w-full flex justify-center items-center">
+                      <img src="./public/img/mario-y-yaros.jpg" alt="">
+                    </div>
+                    <div class="flex flex-col justify-center items-center lg:ml-8 px-8 lg:w-2/3 w-full">
+                      <p class="text-2xl lg:mb-8 mt-20">
+                        Sabemos que de tras de cada negocio el día a día exige tiempo, energía, y desiciones importantes. Pero hay algo que no se debe descuidar: cómo te ve el mundo.
+                    </p>
+                    <p class="text-2xl mb-8">
+                        Mientras tu te enfocas en lo más importante, atender a tus clientes, generar ingresos, nosotros nos encargamos de que tu marca hable fuerte y claro.
+                    </p>
+                    <p class="text-2xl mb-8">
+                        Nuestra misión es impulsar el crecimiento de pequeñas y medianas empresas ayudándoles a tomar el control total de su imagen e identidad profesional.
+                    </p>
+                    </div>
+                </div>
+          </div>
+        </section>
+          <!-- ------------------------Testimonials----------------------- -->
+
+        <!-- <section class="testimonials px-6 py-12">
+            
+        </section> -->
+
+       
+
+        <!-- ------------------------Contact------------------------ -->
+        <section id="call-us" class="w-full flex justify-center items-center mt-6 relative">
+          <div class="w-[80%] p-6 flex flex-col justify-center items-center py-20">
+            <h1 class="mb-4 text-5xl text-center">¿Listo para transformar tu marca?</h1>
+            <h1 class="mb-8 text-5xl text-center">Cuéntanos tus ideas</h1>
+            <button id="openFormBtn" class="flex justify-center items-center w-52 text-xl transition delay-150 duration-300 ease-in-out bg-black text-white rounded-4xl px-11 py-2 hover:bg-[#FFFBB0] hover:text-black"> Hablemos!
+            </button>
+          </div>
+
+          <!-- Modal -->
+          <div id="contactModal" class="fixed inset-0 hidden items-center justify-center bg-black/10 z-50">
+            <div class="relative w-full max-w-lg mx-4 p-8 rounded-3xl bg-white/10 backdrop-blur-md border border-white/30 shadow-2xl shadow-blue-200 text-black">
+              <button id="closeModal" aria-label="Cerrar" class="absolute top-3 right-3 text-xl font-bold">&times;</button>
+              <h2 class="text-2xl font-semibold mb-4 text-center">Hablemos</h2>
+              <form id="contactForm" class="space-y-4">
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-sm mb-1">Nombre</label>
+                    <input type="text" name="firstName" required class="w-full px-4 py-2 rounded-xl bg-white/80 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-400" />
+                  </div>
+                  <div>
+                    <label class="block text-sm mb-1">Apellido</label>
+                    <input type="text" name="lastName" required class="w-full px-4 py-2 rounded-xl bg-white/80 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-400" />
+                  </div>
+                </div>
+                <div class="grid grid-cols-1 sm:grid-cols-2 gap-4">
+                  <div>
+                    <label class="block text-sm mb-1">Teléfono</label>
+                    <input type="tel" name="phone" required class="w-full px-4 py-2 rounded-xl bg-white/80 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-400" />
+                  </div>
+                  <div>
+                    <label class="block text-sm mb-1">Email</label>
+                    <input type="email" name="email" required class="w-full px-4 py-2 rounded-xl bg-white/80 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-400" />
+                  </div>
+                </div>
+                <div>
+                  <label class="block text-sm mb-1">Mensaje</label>
+                  <textarea name="message" rows="4" required class="w-full px-4 py-2 rounded-xl bg-white/80 placeholder-gray-500 outline-none focus:ring-2 focus:ring-blue-400 resize-none"></textarea>
+                </div>
+                <div class="text-center">
+                  <button type="submit" class="mt-2 w-full bg-black text-white py-3 rounded-3xl font-medium hover:bg-gray-800 transition"> Enviar
+                  </button>
+                </div>
+                <div id="formFeedback" class="text-sm mt-2 text-center"></div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <script src="./js/main.js"></script>
+    </main>
+
+    <footer class="w-full px-6 py-12 text-black flex flex-col justify-center items-center">
+
+
+      <div class="p-10 2xl:w-[1600px] xl:w-7xl lg:w-5xl md:w-3xl sm:w-2xl flex flex-row justify-between items-start pt-20  mx-auto border-t-4">
+
+        <div class="w-1/3">
+          <img src="./public/img/YS Logo.png" width="70px" alt="">
+          <h3 class="text-xl font-bold mb-4 mt-2">Yellow Square <br> Studio</h3>
+          <p class="text-base text-gray-600">
+          Estudio creativo que convierte ideas en marcas poderosas. Diseño, desarrollo y comunicación visual sin rodeos.
+          </p>
+        </div>
+
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">Enlaces</h3>
+          <ul class="space-y-2 text-gray-700">
+            <li><a href="#home" class="hover:text-black">Home</a></li>
+            <li><a href="#services" class="hover:text-black">Servicios</a></li>
+            <li><a href="#portfolio" class="hover:text-black">Portafolio</a></li>
+            <li><a href="#contact" class="hover:text-black">Contacto</a></li>
+          </ul>
+        </div>
+
+
+        <div>
+          <h3 class="text-xl font-bold mb-4">Síguenos</h3>
+           <ul class="flex space-x-4">
+          <li>
+            <a href="#" target="_blank" aria-label="Instagram" class="hover:text-black">
+              <svg class="w-6 h-6 fill-current text-gray-700 hover:text-black" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 2.2c3.2 0 3.6 0 4.9.1 1.2.1 2 .3 2.5.6.6.3 1 .7 1.5 1.5.3.5.5 1.3.6 2.5.1 1.3.1 1.7.1 4.9s0 3.6-.1 4.9c-.1 1.2-.3 2-.6 2.5-.3.6-.7 1-1.5 1.5-.5.3-1.3.5-2.5.6-1.3.1-1.7.1-4.9.1s-3.6 0-4.9-.1c-1.2-.1-2-.3-2.5-.6-.6-.3-1-.7-1.5-1.5-.3-.5-.5-1.3-.6-2.5-.1-1.3-.1-1.7-.1-4.9s0-3.6.1-4.9c.1-1.2.3-2 .6-2.5.3-.6.7-1 1.5-1.5.5-.3 1.3-.5 2.5-.6C8.4 2.2 8.8 2.2 12 2.2m0-2.2C8.7 0 8.3 0 7 .1 5.6.1 4.3.4 3.2 1.1 2.1 1.7 1.3 2.5.7 3.6.1 4.7 0 6 0 7.4c-.1 1.3-.1 1.7-.1 4.6s0 3.3.1 4.6c.1 1.3.4 2.6 1.1 3.7.6 1.1 1.4 1.9 2.5 2.5 1.1.7 2.4 1 3.7 1.1 1.3.1 1.7.1 4.6.1s3.3 0 4.6-.1c1.3-.1 2.6-.4 3.7-1.1 1.1-.6 1.9-1.4 2.5-2.5.7-1.1 1-2.4 1.1-3.7.1-1.3.1-1.7.1-4.6s0-3.3-.1-4.6c-.1-1.3-.4-2.6-1.1-3.7-.6-1.1-1.4-1.9-2.5-2.5-1.1-.7-2.4-1-3.7-1.1C15.7 0 15.3 0 12 0zm0 5.8c-3.4 0-6.2 2.8-6.2 6.2S8.6 18.2 12 18.2s6.2-2.8 6.2-6.2S15.4 5.8 12 5.8zm0 10.2c-2.2 0-4-1.8-4-4s1.8-4 4-4c2.2 0 4 1.8 4 4s-1.8 4-4 4zm6.4-11.8c-.8 0-1.5.6-1.5 1.5 0 .8.6 1.5 1.5 1.5.8 0 1.5-.6 1.5-1.5s-.6-1.5-1.5-1.5z"/></svg>
+            </a>
+          </li>
+        <!-- Puedes añadir más redes con íconos similares -->
+        </ul>
+        </div>
+
+      </div>
+
+
+    <div class="w-full mt-12 text-center text-sm text-gray-500">
+    © 2025 Yellow Square Studio. Todos los derechos reservados.
+    </div>
+  </footer>
+
+    
+  </body>
+</html>

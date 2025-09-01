@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@import url("https://fonts.googleapis.com/css2?family=Doto:wght@100..900&family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+variables color {
+    --color-texto: #000000;
+    --color-texto-secundario: #B7B7B7;
+    --plummexColor: #3DB5BD;
+
+}
+
+
+* {
+  /* margin: 0;
+  padding: 0; */
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Inter", sans-serif;
+  font-optical-sizing: auto;
+  /* font-weight: <weight>; */
+  font-style: normal;
+  background-image: url("../img/landing-background-4000px-III.jpg");
+  background-repeat: no-repeat;
+  /* background-position: center; */
+  background-size: cover;
+}
+
+nav {
+  font-family: "Doto", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 900;
+  font-style: normal;
+  font-variation-settings: "ROND" 0;
+}
+
+.container-landing {
+  background-image: url("../img/landing-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
+
+.landing {
+  h1 {
+    font-weight: 700;
+  }
+  .container-landing {
+    font-family: "Doto", sans-serif;
+    font-optical-sizing: auto;
+    font-weight: 700;
+    font-style: normal;
+    font-variation-settings: "ROND" 0;
+  }
+}
+
+.testimonials {
+   background-image: url("../img/landing-background.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+}
