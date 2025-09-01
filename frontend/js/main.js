@@ -38,6 +38,57 @@ document.addEventListener('DOMContentLoaded', () => {
     });
   }
 
+  //movil
+const mobileNav = document.querySelector('.mobile-nav');
+let navOpen = false;
+
+if (mobileNav) {
+  mobileNav.addEventListener('click', () => {
+    navOpen = !navOpen;
+
+    mobileNav.querySelectorAll('li').forEach(li => {
+      const letterSpan = li.querySelector('span:first-child');  // letra H/S/P/C
+      const textSpan = li.querySelector('span:nth-child(2)');  // resto de la palabra
+
+      if (navOpen) {
+        // Ocultar la letra y mostrar toda la palabra
+        letterSpan.classList.add('opacity-0');
+        textSpan.classList.remove('opacity-0');
+        textSpan.classList.add('opacity-100');
+      } else {
+        // Volver al estado original
+        letterSpan.classList.remove('opacity-0');
+        textSpan.classList.remove('opacity-100');
+        textSpan.classList.add('opacity-0');
+      }
+    });
+  });
+}
+
+
+  // document.querySelectorAll('.mobile-nav li').forEach(li => {
+  // li.addEventListener('click', () => {
+  //   const span = li.querySelector('span');
+  //   span.classList.toggle('opacity-100');
+  //   // span.classList.toggle('-translate-x-12');
+  // });
+  // });
+
+  // Móvil: abrir/cerrar menú
+// const mobileNav = document.getElementById('mobileNav');
+// const mobileNavList = mobileNav.querySelector('.mobile-nav');
+
+// mobileNav.addEventListener('click', (e) => {
+//   e.stopPropagation(); // evita cerrar por click en body
+//   mobileNavList.classList.toggle('hidden');
+// });
+
+document.addEventListener('click', () => {
+  if (!mobileNavList.classList.contains('hidden')) {
+    mobileNavList.classList.add('hidden');
+  }
+});
+
   // modal logic
   const form = document.getElementById('contactForm');
   const feedback = document.getElementById('formFeedback');
@@ -100,10 +151,10 @@ if (form) {
     }
 
     try {
-      const res = await fetch('https://tu-backend-on-render.onrender.com/api/contact', {
+      const res = await fetch('https://yellow-square-backend.onrender.com/api/contact', {
         method: 'POST',
         headers: { 'Content-Type': 'application/json' },
-        body: JSON.stringify(data)
+        body: JSON.stringify(payload)
       });
 
       let resultText = '';
@@ -131,3 +182,4 @@ if (form) {
   });
 }
 });
+
